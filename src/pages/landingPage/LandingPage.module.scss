@@ -1,0 +1,25 @@
+.container {
+  background-color: grey;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  .item {
+    background: lightblue;
+    width: calc((100% - 30px) / 3);
+    flex: none;
+    margin-bottom: 1em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .boxText {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+  .boxColor {
+    background-color: aliceblue;
+    color: #000;
+    padding: 2.3rem;
+  }
+}
