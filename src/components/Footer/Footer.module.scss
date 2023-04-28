@@ -1,0 +1,45 @@
+.container {
+  .subBarra {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    background: #fe1f56;
+
+    span {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-left: 1px solid #393938;
+      border-right: 1px solid #393938;
+      padding: 1rem;
+      margin: 5px;
+    }
+  }
+  .downBarra {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+    background: #393938;
+
+    height: 12rem;
+    span {
+      color: grey;
+    }
+    .item {
+      width: 25em;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      margin-bottom: 5rem;
+    }
+    .icons {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 2rem;
+      padding-bottom: 1rem;
+    }
+  }
+}

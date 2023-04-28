@@ -1,5 +1,6 @@
 import Footer from "@/something/components/Footer/Footer";
 import Navbar from "@/something/components/Navbar/Navbar";
+import Chat from "@/something/components/Chat/Chat";
 import styles from "./LandingPage.module.scss";
 import Image from "next/image";
 import * as image from "../../assets/images";
@@ -16,129 +17,169 @@ const LandingPage = () => {
 
   return (
     <div>
-      <Navbar></Navbar>
+      <Chat />
+      <Navbar />
       <div className={styles.containerHead}>
-        <div className={styles.item}>
-          <Image
-            src={image.magnetaAsterisk}
-            alt="No image"
-            width={70}
-            height={70}
-          />
-        </div>
-        <div className={styles.item}>2</div>
-        <div className={styles.item}>
-          <Image
-            src={image.yellowHex}
-            alt="No image"
-            width={220}
-            height={220}
-            style={{ transform: "rotate(42deg" }}
-          />
-          <Image
-            src={image.whiteArrow}
-            alt="No image"
-            width={50}
-            height={50}
-            style={{ transform: "rotate(-135deg" }}
-          />
-        </div>
-        <div className={styles.item}>
-          <Image
-            src={image.yellowHex}
-            alt="No image"
-            width={170}
-            height={170}
-          />
-        </div>
-        <div className={styles.item}>
-          <Image src={image.minus} alt="No image" width={70} height={70} />
-          <Image src={image.logo} alt="No image" width={400} height={400} />
-          <Image
-            src={image.blueAsterisk}
-            alt="No image"
-            width={50}
-            height={50}
-          />
-          <div>
+        <div className={styles.item1}>
+          <div className={styles.div1}>
             <Image
-              src={image.whiteArrow2}
+              src={image.magnetaAsterisk}
               alt="No image"
-              width={100}
-              height={100}
+              width={70}
+              height={70}
+              style={{ transform: "rotate(90deg" }}
+            />
+            <div>
+              <Image
+                src={image.yellowHex}
+                alt="No image"
+                width={220}
+                height={220}
+                style={{ transform: "rotate(72deg" }}
+              />
+              <Image
+                src={image.whiteArrow}
+                alt="No image"
+                width={50}
+                height={50}
+                style={{ transform: "rotate(-135deg" }}
+              />
+            </div>
+          </div>
+        </div>
+        <div className={styles.item2}>
+          <div className={styles.div2}>
+            <Image
+              src={image.minus}
+              alt="No image"
+              width={70}
+              height={70}
+              style={{ transform: "rotate(0deg" }}
+            />
+            <Image
+              src={image.logo}
+              alt="No image"
+              width={400}
+              style={{ transform: "rotate(0deg" }}
+            />
+            <div style={{ marginTop: "8.5rem", marginLeft: "5rem" }}>
+              <Image
+                src={image.blueAsterisk}
+                alt="No image"
+                width={50}
+                height={50}
+                style={{ transform: "rotate(0deg" }}
+              />
+            </div>
+          </div>
+        </div>
+        <div className={styles.item3}>
+          <div className={styles.div3}>
+            <div
+              style={{
+                display: "flex",
+                paddingLeft: "10rem",
+                marginTop: "3rem",
+                gap: "24rem",
+              }}
+            >
+              <Image
+                src={image.yellowHex}
+                alt="No image"
+                width={200}
+                height={200}
+                style={{ transform: "rotate(0deg" }}
+              />
+              <Image
+                src={image.whiteArrow2}
+                alt="No image"
+                width={100}
+                height={100}
+                style={{ transform: "rotate(0deg" }}
+              />
+            </div>
+
+            <div className={styles.boxText}>
+              <div className={styles.boxColor}>
+                <h1>Curso Anual de Creatividad</h1>
+                <span>Hay plazas disponibles.</span>
+                <span>Apúntate!</span>
+              </div>
+              <div className={styles.boxColor}>
+                <h1>Planificación y Estrategia Creativa</h1>
+                <span>Quedan pocas plazas.</span>
+                <span>No te quedes fuera!</span>
+              </div>
+            </div>
+          </div>{" "}
+        </div>
+        <div className={styles.item4}>
+          <div className={styles.div4}>
+            <Image
+              src={image.hexBlue}
+              alt="No image"
+              width={70}
+              style={{ transform: "rotate(0deg" }}
+            />
+            <Image
+              src={image.greenTrap}
+              alt="No image"
+              width={150}
+              style={{ transform: "rotate(0deg" }}
             />
           </div>
         </div>
-        <div className={styles.item}>
-          <Image src={image.dots} alt="No image" width={4} />
-          <div className={styles.boxText}>
-            <div className={styles.boxColor}>
-              <h1>Curso Anual de Creatividad</h1>
-              <span>Hay plazas disponibles.</span>
-              <span>Apúntate!</span>
-            </div>
-            <div className={styles.boxColor}>
-              <h1>Planificación y Estrategia Creativa</h1>
-              <span>Quedan pocas plazas.</span>
-              <span>No te quedes fuera!</span>
-            </div>
+        <div className={styles.item5}>
+          <div className={styles.div5}>
+            <Image
+              src={image.magnetaCircle}
+              alt="No image"
+              width={40}
+              height={40}
+            />
+            <Image
+              src={image.whiteArrowDown}
+              alt="No image"
+              width={70}
+              height={70}
+            />
+            <span>// Ver todos los cursos // ver</span>
           </div>
-        </div>
-        <div className={styles.item}>
-          <Image
-            src={image.magnetaCircle}
-            alt="No image"
-            width={40}
-            height={40}
-          />
-        </div>
-        <div className={styles.item}>
-          <Image
-            src={image.whiteArrowDown}
-            alt="No image"
-            width={70}
-            height={70}
-          />
-        </div>
-        <div className={styles.item}>
-          <Image
-            src={image.greenTrap}
-            alt="No image"
-            width={170}
-            height={170}
-          />
         </div>
       </div>
       <div className={styles.containerMidHight}>
         <div className={styles.box1}>
-          <h1>Mucho más que una escuela de </h1>
-          <h1>creativos</h1>
-          <br />
-          <p>
-            Un Brother es alguien que
-            <span> piensa continuamente, </span>
-            inquiero,
-            <span> curioso</span> y reflexivo.
-          </p>
-          <br />
-          <p>
-            Que se
-            <span> plantea preguntas</span> y busca las respuestas. Un Brother
-            es alguien que se abre camino, proactivo, que tiene iniciativas, que
-            <span> busca oportunidades.</span>
-          </p>
-          <br />
-          <p>
-            Un brother no deja que las cosas pasen, va a buscarlas y las pelea y
-            que si gana, sigue a por mas.
-          </p>
-          <br />
-          <p>
-            Y si pierde,
-            <span> no se rinde jamás</span>
-          </p>
+          <div className={styles.backgroundYellow}>
+            <h1>Mucho más que una escuela de creativos</h1>
+            <br />
+            <p>
+              Un Brother es alguien que
+              <span> piensa continuamente, </span>
+              inquiero,
+              <span> curioso</span> y reflexivo.
+            </p>
+            <br />
+            <p>
+              Que se
+              <span> plantea preguntas</span> y busca las respuestas. Un Brother
+              es alguien que se abre camino, proactivo, que tiene iniciativas,
+              que
+              <span> busca oportunidades.</span>
+            </p>
+            <br />
+            <p>
+              Un brother no deja que las cosas pasen, va a buscarlas y las pelea
+              y que si gana, sigue a por mas.
+            </p>
+            <br />
+            <p>
+              Y si pierde,
+              <span> no se rinde jamás.</span>
+            </p>
+          </div>
         </div>
-        <div>
+
+        <div className={styles.backgroundCursos}>
           <h1>Cursos y Workshops</h1>
           <br />
           <div className={styles.box2}>
@@ -199,6 +240,9 @@ const LandingPage = () => {
                 height={200}
               />
               <p>Planificación y Estrategia Creativa</p>
+            </div>
+            <div className={styles.magenta}>
+              <Image src={image.magnetaAsterisk} alt="No image" />
             </div>
           </div>
         </div>
@@ -344,6 +388,12 @@ const LandingPage = () => {
               />
             </span>
           </div>
+          <Image
+            src={image.magnetaCircle2}
+            alt="No image"
+            width={50}
+            heigth={50}
+          />
         </div>
         <div
           style={{ backgroundColor: "#fe1f56", color: "#fff" }}
@@ -366,7 +416,43 @@ const LandingPage = () => {
           )}
         </div>
       </div>
-      <Footer></Footer>
+      <div className={styles.containerDown}>
+        <div className={styles.fontGrey}>
+          <h1>#Sosloquehacés</h1>
+          <Image src={image.bearMisc} alt="No image" />
+        </div>
+        <div className={styles.form}>
+          <h3>¿Quieres saber más sobre nuestros cursos?</h3>
+          <p>Completá este formulario</p>
+          <span>Nombre*</span>
+          <input disabled name="nombre" placeholder="Escribe tu nombre" />
+          <span>Teléfono*</span>
+          <input disabled name="telefono" value="612 27 84 09" />
+          <span>E-mail*</span>
+          <input
+            disabled
+            name="email"
+            placeholder="Escribe tu correo electrónico"
+          />
+          <span>Curso de interés</span>
+          <div className={styles.caja}>
+            <select disabled>
+              <option>Seleccioná un curso</option>
+            </select>
+          </div>
+          <span>Mensaje</span>
+          <input
+            disabled
+            name="mensaje"
+            placeholder="Escribe un mensaje adicional"
+          />
+          *datos obligatorios
+          <button>
+            <span>Enviar</span>
+          </button>
+        </div>
+      </div>
+      <Footer />
     </div>
   );
 };

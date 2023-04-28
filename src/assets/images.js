@@ -41,7 +41,9 @@ import instagram from "./instagram.svg";
 import globe from "./globe.svg";
 import logo from "./logo.svg";
 import iso from "./iso.svg";
+import cloud from "./cloud.svg";
 export {
+  cloud,
   iso,
   email,
   instagram,

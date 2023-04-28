@@ -1,0 +1,12 @@
+.container {
+  position: fixed;
+  width: 10rem;
+  height: 7rem;
+  background: #0f65ba;
+  color: #fff;
+  border-top-left-radius: 50px;
+  :hover {
+    background: #e1df3c;
+    color: #000;
+  }
+}
