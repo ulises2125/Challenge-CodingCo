@@ -8,6 +8,10 @@
   align-items: center;
   height: 64px;
 
+  svg {
+    cursor: pointer;
+  }
+
   .tabs {
     display: flex;
     align-items: center;
