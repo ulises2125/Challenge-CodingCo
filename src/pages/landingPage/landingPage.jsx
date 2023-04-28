@@ -17,7 +17,6 @@ const LandingPage = () => {
 
   return (
     <div>
-      <Chat />
       <Navbar />
       <div className={styles.containerHead}>
         <div className={styles.item1}>
@@ -110,6 +109,7 @@ const LandingPage = () => {
                 <span>Quedan pocas plazas.</span>
                 <span>No te quedes fuera!</span>
               </div>
+              <span>// Ver todos los cursos // ver</span>
             </div>
           </div>{" "}
         </div>
@@ -143,7 +143,10 @@ const LandingPage = () => {
               width={70}
               height={70}
             />
-            <span>// Ver todos los cursos // ver</span>
+            <div></div>
+            <div className={styles.chat}>
+              <Chat />
+            </div>
           </div>
         </div>
       </div>
